@@ -82,7 +82,7 @@ footer{text-align: center; font-size: 150%; background-color: slateblue;}
 @media screen and (max-width: 550px) {
     h1, h2 {text-shadow: 1px 1px blue; background-color: rgba(23, 23, 23, 0.5);}
     #logo{display: none;}
-    header{height: 400px; background-image: url("imgs/SL_030521_41240_68.jpg");background-size: 100% 400px; color: steelblue;}
+    header{height: 400px; background-image: url("imgs/bannerdia.jpg");background-size: 100% 400px; color: steelblue;}
     div.presentacion{float:none; margin: auto; width: 100%; text-align: center; left: 0%;}
 }
 
