@@ -1,0 +1,43 @@
+*{box-sizing: border-box;}
+
+body{
+    background: rgb(19, 65, 173);
+    color:seashell; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img{background-color: rgb(19, 65, 173);}
+
+a{text-decoration: none;}
+ul{list-style-type: none;}
+
+.presentacion{float:right; width:50%;}
+
+header::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+header{position: relative;}
+
+.container-center{
+    position:absolute;
+    bottom: 2%;
+    left: 4%;
+}
+
+h1, h2{
+    text-shadow: 5px 5px 4px rgb(189, 210, 222);
+}
+
+
+h1{font-size: 500%;}
+h2{font-size: 200%;} 
+
+.container{text-align: center; background-color: rgb(10, 30, 78);}
+.container:hover{background-color: rgb(33, 139, 209);}
+
+table{margin: auto; font-size: 2.5em; width: 80%; padding-bottom: 5%;}
+td{padding-right: 1%;}
+
