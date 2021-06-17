@@ -52,9 +52,18 @@ td{padding-right: 1%; padding-left: 4%; padding-bottom: 1.2%; text-align: justif
     text-align: center;
 }
 
-#historia{flex: 60%; margin-left: 2%;}
-#imagensebas{flex: 20%; margin-left: 2%;margin-top: 4%; border-right: solid salmon; border-bottom: solid salmon; max-width: 300px;}
-#imagensebas:hover{transform: skewY(170deg);}
+.contenidoalumno{flex: 60%; margin-left: 2%;}
+.imagenalumno{
+    flex: 20%; 
+    margin-left: 2%;
+    margin-right: 4%;
+    margin-top: 4%; 
+    border-right: solid salmon; 
+    border-bottom: solid salmon; 
+    max-width: 300px;}
+.imagenalumno:hover{transform: skewY(170deg);}
+
+.capital{font-size: 150%;}
 
 .iframecontainer{overflow: hidden; width: 100%; padding-top: 50%; position: relative;}
 iframe{margin:auto; width: 70%; height: 70%; position: absolute; top:0px; bottom: 0px; left: 0px; right: 0px; display: block;}
@@ -75,8 +84,8 @@ footer{text-align: center; font-size: 150%; background-color: slateblue;}
     table{font-size: 140%;}
 }
 
-@media screen and (max-width: 850px) {
-    #imagensebas{flex:100%; margin:auto; margin-top: 4%;}
+@media screen and (max-width: 890px) {
+    .imagenalumno{flex:100%; margin:auto; margin-top: 4%;}
 }
 
 @media screen and (max-width: 550px) {
@@ -86,3 +95,47 @@ footer{text-align: center; font-size: 150%; background-color: slateblue;}
     div.presentacion{float:none; margin: auto; width: 100%; text-align: center; left: 0%;}
 }
 
+
+
+.mySlides {display: none}
+
+
+
+.slideshow-container {
+    width: 100%;
+    
+    position: relative;
+    margin: auto;
+}
+.text {
+    background-color: rgba(100, 100, 150, 0.8);
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 2s;
+
+}
