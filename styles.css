@@ -1,12 +1,14 @@
 *{box-sizing: border-box;}
 
+
+
 body{
-    background: rgb(19, 65, 173);
+    background: rgb(23, 30, 41);
     color:seashell; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-img{background-color: rgb(19, 65, 173);}
+img{background-color: rgb(23, 30, 41);}
 
 a{text-decoration: none;}
 ul{list-style-type: none;}
@@ -33,11 +35,54 @@ h1, h2{
 
 
 h1{font-size: 500%;}
-h2{font-size: 200%;} 
+h2{font-size: 350%;}
+p{font-size: 170%; text-align: justify;} 
 
 .container{text-align: center; background-color: rgb(10, 30, 78);}
 .container:hover{background-color: rgb(33, 139, 209);}
 
 table{margin: auto; font-size: 2.5em; width: 80%; padding-bottom: 5%;}
-td{padding-right: 1%;}
+th{border-bottom: solid;}
+td{padding-right: 1%; padding-left: 4%; padding-bottom: 1.2%; text-align: justify;}
+.actividad{padding-left: 8%;}
+
+.history {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#historia{flex: 60%; margin-left: 2%;}
+#imagensebas{flex: 20%; margin-left: 2%;margin-top: 4%; border-right: solid salmon; border-bottom: solid salmon; max-width: 300px;}
+#imagensebas:hover{transform: skewY(170deg);}
+
+.iframecontainer{overflow: hidden; width: 100%; padding-top: 50%; position: relative;}
+iframe{margin:auto; width: 70%; height: 70%; position: absolute; top:0px; bottom: 0px; left: 0px; right: 0px; display: block;}
+
+footer{text-align: center; font-size: 150%; background-color: slateblue;}
+
+@media screen and (max-width: 1400px) {
+    h1 {font-size: 300%;}
+    h2 {font-size: 250%;}
+    p{font-size: 130%;}
+    table{font-size: 160%;}
+}
+
+@media screen and (max-width: 900px) {
+    h1 {font-size: 250%;}
+    h2 {font-size: 200%;}
+    p{font-size: 100%;}
+    table{font-size: 140%;}
+}
+
+@media screen and (max-width: 850px) {
+    #imagensebas{flex:100%; margin:auto; margin-top: 4%;}
+}
+
+@media screen and (max-width: 550px) {
+    h1, h2 {text-shadow: 1px 1px blue; background-color: rgba(23, 23, 23, 0.5);}
+    #logo{display: none;}
+    header{height: 400px; background-image: url("imgs/SL_030521_41240_68.jpg");background-size: 100% 400px; color: steelblue;}
+    div.presentacion{float:none; margin: auto; width: 100%; text-align: center; left: 0%;}
+}
 
